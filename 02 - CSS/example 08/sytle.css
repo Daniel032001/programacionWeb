@@ -12,8 +12,10 @@ h1 {
   box-sizing: border-box;
   height: 200px;
   width: 200px;
-  outline: solid 5px pink;
-  outline-offset: 5px;
+  outline: solid 5px pink;/*DECLARANDO UN SEGUNDO BORDE EXTERNO*/
+  outline-offset: 5px;/*SEPARACION ENTRE BORDE INTERIOR Y BORDE EXTERIOR*/
+  outline-style: dotted;/*ESTILO DEL BORDE EXTERNO*/
+  outline-width: 10px;
 }
 
 .panel {
