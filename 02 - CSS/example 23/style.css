@@ -13,25 +13,24 @@ a[target] {
 a[target="_blank"] {
     background-color: purple;
 }
-
+/*<~> VA A SELECCIONAR LOS ATRIBUTOS QUE CONTENGAN EL VALOR QUE INDICAMOS <end>*/
 a[class~="end"] {
     background-color: black;
 }
-
+/*<|> VA A SELECCIONAR LOS ATRIBUTOS QUE INICIEN CON EL VALOR QUE INDICAMOS <top>*/
 a[class|="top"] {
     border: 1px solid pink;
 }
-
+/*<^> VA A SELECCIONAR LOS ATRIBUTOS QUE INCIEN CON EL VALOR QUE INDICAMOS <top>*/
 a[class^="top"] {
     padding: 1rem;
     display: block;
 }
-
-
+/*<$> VA A SELECCIONAR LOS ATRIBUTOS QUE TERMINE CON EL VALOR QUE INDICAMOS <test>*/
 a[class$="test"] {
     border-radius: 10px;
 }
-
+/*<*> VA A SELECCIONAR LOS ATRIBUTOS QUE TENGAN CUALQUIER COSA QUE QUERRAMOS, EN ESTE CASO, QUE TENGAN LETRA <a>*/
 a[class*="a"]{
     background-color: salmon;
 }

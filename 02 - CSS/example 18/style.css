@@ -28,17 +28,20 @@ body {
 .panel img {
   width: 200px;
   height: auto;
-  float: left;
+  float: left;/*HACER QUE EL TEXTO SE MUESTRE A LA PAR DE LA IMAGEN, none, right*/
 }
+
+/*HACE QUE SI NUESTRO DIV TIENE ELEMENTOS FLOTANTES, ESTOS NO SE SALGAN DEL DIV
+SE LE APLICA A LA CLASE QUE TIENE ELEMENTOS FLOTANTES*/
 
 .clearfix {
   overflow: auto;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+.clearfix::after {/*CORRIGE LA FORMA EN LA QUE FLOTAN LAS COSAS*/
+  content: "";/*ACA PODEMOS PONER EL CODIGO DEL ICONO*/
+  clear: both;/*QUE LIMPIE LO QUE ESTABA FLOTAND(PONERLO ABAJO)*/
+  display: table;/*PONGA UN DISPLAY DE TIPO TABLA*/
 }
 
 .prueba-rem {

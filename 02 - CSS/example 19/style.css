@@ -22,15 +22,30 @@
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 1em;
+    padding: 14px 1em; /*PIXELES/16=EM*/
     text-decoration: none;
 }
 
 .menu ul li a:hover {
     background-color: #111;
-    outline: 3px solid red;
+    outline: 3px solid red;/*HACER QUE NO SE MUEVA LA BARRA AL PASAR EL MOUSE*/
+    /*OTRA FORMA DE QUITAR QUE SE MUEVA LA BARRA AL PASAR EL MOUESE: border: 1px solid transparent;*/
 }
 
 .menu .active {
     background-color: red;
 }
+
+/*
+nav > ul {
+    list-style-type: none; LE QUITAMOS LOS PUNTITOS
+    margin: 0;
+    padding: 0;
+    background-color: #333; ESTE SERA EL COLOR DE LA BARRA DEL MENU
+
+}
+nav ul li {
+    float: left; QUE FLOTEN A LA IZQUIERDA
+
+}
+*/

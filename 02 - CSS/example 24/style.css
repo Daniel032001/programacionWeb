@@ -16,7 +16,7 @@ input[type="text"] {
   color: black;
 }
 
-input[type="text"]:focus {
+input[type="text"]:focus {/*AL ESTAR CON LA PSEUDO CLASE focus LE PONDREMOS LO SIGUIENE:*/
   border: none;
   border-bottom: 2px solid blue;
 }
@@ -27,16 +27,16 @@ input[type="text"]:focus {
   background-size: 15px;
   background-repeat: no-repeat;
   padding-left: 30px;
-  width: 20%;
+  width: 20%;/*ESTE SERA EL ANCHO INICIAL, EL CUAL AL DAR CLICK CAMBIARA A 100%*/
   min-width: 150px;
-  transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;/*TRANSICION*/
 }
 
-.search input[type="text"]:focus {
-  width: 100%;
+.search input[type="text"]:focus {/*focus ES CUANDO LE DAMOS CLICK O ESTAMOS ESCRIBIENDO EN ELLA*/
+  width: 100%;/*ESTE SERA EL ANCHO AL DAR CLICK*/
 }
 
-select {
+select {/*PARA PERSONALIZAR MENU*/
   width: 100%;
   padding: 16px 20px;
   border: none;

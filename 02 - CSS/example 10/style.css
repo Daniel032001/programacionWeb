@@ -3,6 +3,7 @@
     Sans-serif
     Monospace
 */
+/*IMPORTAMOS LAS FUENTES PARA IRLAS USANDO MAS ABAJO*/
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
 .serif {
@@ -44,9 +45,15 @@ h1 {
 }
 
 h1 {
-  font-size: 2vw;
+  font-size: 2vw;/*HACER QUE EL TAMANO LA FUENTE AUMENTE AL AMPLIAR LA PAGINA 2w es 2% de la pagina*/
 }
 
 p.b {
-  font: italic small-caps bold 0.75em/1em "Indie Flower", cursive;
+  /*estilo(itaic),la variante(por si quiero cambiar), el peso(bold), ancho/alto de la linea, la familias */
+  font: italic small-caps bold 0.75em/1em "Indie Flower", cursive;/*IMPRTADO DEL googlefonts*/
+  /*SI QUEREMOS PONER em: PIXELES/16=nuestro em a usar*/
 }
+/*
+PARA BUSCAR FUENTES NOS VAMOS A google.fonts
+1) seleccionar estilo
+*/

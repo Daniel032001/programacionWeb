@@ -11,6 +11,6 @@ div {
     margin: 10px auto;
 }
 
-.container-fluid {
+.container-fluid {/*CONTENIDO FLUID ES PARA TODA LA PANTALLA*/
     max-width: 100%;
 }

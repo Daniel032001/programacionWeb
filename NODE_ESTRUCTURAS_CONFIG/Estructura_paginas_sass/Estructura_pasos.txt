@@ -1,0 +1,23 @@
+ESTRUCTURA PARA PROYECTOS
+1- seguir las primeras configuraciones del otro txt
+2- crear carpertas: css y sass. 
+3- dentro de la carpeta sass, crear carpetas: base, components, layout
+3- dentro de la carpeta base, crear:
+_reset.scss
+_page.scss
+4- dentro de layout, crear las partes de nuestra pagina: 
+_about.scss
+_footer.scss
+_gallery.scss
+_header.scss
+_navbar.scss
+5- dentro de component, crear los componentes del sitio web:
+_button.scss
+_card.scss *LAS CARTAS DONDE SALEN NUESTROS DATOS*
+_hamburguer.scss *MENU HAMBURGUER*
+_heading.scss
+_logo.scss
+6- dentro de la carpeta sass , creamos:
+_mixin.scss *FUNCIONES QUE PERMITEN REUTILIZAR PROPIEDADES*
+7- globalmente, al igual que la carpeta css y sass, creamos una carpeta: images
+8- dentro de images, colocar las imagenes a usar

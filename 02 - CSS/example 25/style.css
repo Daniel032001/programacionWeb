@@ -1,8 +1,10 @@
 * {
+  /* heredar el boxing sizing*/
   box-sizing: inherit;
 }
 
 :root {
+  /*hacer sistema de grid, usando border box paa hacerlo natural*/
   box-sizing: border-box;
 }
 
@@ -11,65 +13,157 @@ body {
   padding: 0;
 }
 
-[class*="col-"] {
-    width: 100%;
-    float: left;
-    padding: 15px;
-    border: 1px solid black;
+[class*="col-"] { 
+  width: 100%;
+  float: left;
+  padding: 15px;
+  border: 1px solid black;/*para verlas*/
 }
 
 footer {
-    display: none;
+  display: none;/*SI NO QUEREMOS MOSTRAR EL FOOTER*/
 }
 
 @media only screen and (min-width: 600px) {
-
-    footer {
-        display: block;
-    }
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
+  footer {
+    display: block;/*SI MOSTRAR EL FOOTER EN TABLETS O A PARTIR DE TABLETS*/
   }
+  /* For tablets: */
+  /COLUMNAS INDIVIDUALES / 
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
 
 @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
   }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
 
-
-  /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  ...;
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+@media only screen and (min-width: 600px) {
+  ...;
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {
+  [class*="col-"]{
+    width: 100%;
+  }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 992px) {
+  ...;
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+@media only screen and (min-width: 1200px) {
+  ...;
+}
+
+/* APLICAMOS CLEARFIX
+  .row::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+  ------------------------------------
+  CREAR CONTAINER SI QUEREMOS LIMITAR O CENTRAR CONTENIDO
+  .container {
+    max-width: 1024px;
+    margin: auto; PARA QUE ESTE CENTRADO
+  }
+  -----------------------------------
+  PARA HACER QUE EL SITIO ESTE AL 100%, DEBEMOS QUITARLE
+  TODAS LAS COSAS AL BODY
+  body {
+    margin: 0;
+    padding: 00;
+    height: 100%; 100% del sitio web
+  }
+  ----------------------------------
+  LAS MEDIA QUERY NOS PERMITE ESTABLECER PUNTOS EN DONDE 
+  EL CSS CAMBIA DE ACUERDO A UN MEDIO (TAMANIO DE LA PANTALLA
+  CUANDO ESTE EN UN TELEFONO, por ej)
+
+  max-width: 320px= cuando nuestro nuestro ancho maximo sea de 320px, 
+ponemos instrucciones
+@media only screen and (max-width: 320px) {
+  header {
+    background-color: chartreuse;
+  }
+}
+  ----------------------------------------------------------
+  CUANDO UN DISPOSITIVO SEA GRANDE, PONNDREMOS LAS COLUMNAS AL 100% LO CUAL
+  PERMITIRA PONER UNA COLUMNA SOBRE LA OTRA PARA QUE EL USUARIO NO MUEVA HORIZONTALMENTE
+  @media only screen and (min-width: 768px) {
+  [class*="col-"]{
+    width: 100%;
+  }
+}
+-----------------------------------------------------------------------
+ES RECOMENDABLE COMENZAR A DESARROLLAR PARA UN MOVIL, xq este presenta un comportamiento
+similar al por defecto de html sin estilo.
+----------------------------------------------------------------------------------------------
+/*DEFINIMOS EL COMPORTAMIENTO QUE TENDRAN LAS COLUMNAS: para aquellos elementos que en su clase contengan col-numero
+les aplicamos que floten a la izq, paddin entre ellas de 15px, para ver la columnas un borde 
+[class*="col-"] { 
+  width: 100%;
+  float: left; cuando hacemos flotar un elemento de un div o cualq otro, este colapsa(altura 0), por lo tanto 
+    aplicamos clearfix
+  padding: 15px;
+  border: 1px solid black;
+}
+
+
+*/

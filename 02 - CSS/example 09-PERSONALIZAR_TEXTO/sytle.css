@@ -13,7 +13,7 @@ p {
   text-align: left;
   line-height: 1.5;
   word-spacing: 2px;
-  white-space: nowrap;
+  white-space: nowrap; /*TEXTO CORRIDO SIN ENTERS*/
   /* direction: rtl;
     unicode-bidi: bidi-override;*/
 }

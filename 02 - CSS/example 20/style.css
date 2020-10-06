@@ -1,8 +1,8 @@
-* {
+* {/*PERSONALOZAR LA FORMA DE LA CAJA*/
   box-sizing: inherit;
 }
 
-:root {
+:root {/*PARA COMBINAR 2 ESTILOS DE DISENIO*/
   box-sizing: border-box;
 }
 body {
@@ -22,11 +22,11 @@ body {
 }
 
 .column {
-  float: left;
+  float: left;/*HACEMOS FLOTAR LA COLUMNA*/
   padding: 15px;
 }
 
-.clearfix::after {
+.clearfix::after {/*APLICAMOS CLARFIX PORQUE SE ESTABA PERDIENDO EL TAMANIO*/
   content: " ";
   clear: both;
   display: table;
@@ -46,17 +46,17 @@ body {
   padding: 0;
 }
 
-.menu li {
+.menu li {/*EDITANDO LOS li DE FORMA ESTETICA*/
   padding: 8px;
   margin-bottom: 8px;
   background-color: teal;
 }
 
-.menu li a {
+.menu li a {/*EDITANDO LOS li DE FORMA INTERNA*/
   text-decoration: none;
   color: white;
   text-transform: capitalize;
-  font-weight: bold;
+  font-weight: bold;/*GROSOR DE LA FUENTE*/
 }
 
 .menu li:hover {

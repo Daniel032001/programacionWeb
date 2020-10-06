@@ -1,42 +1,42 @@
 
-div {
+div {/*A LOS DIV LES PONEMOS BORDES PARA VER DONDE ESTAN*/
     margin: 1em;
     border: 5px solid green;
 }
 
-.relative {
+.relative {/*relative NOS PERMITE MOVERLO DE DONDE APARECE ORIGINALMENTE*/
     position: relative;
     top: 1px;
 }
 
 
-div.fixed {
+div.fixed {/*fixed CONSISTE EN ANCLAR EL ELEMENTO*/
     position: fixed;
     border: 5px solid red;
     bottom: 0;
     right: 0;
     width: 200px;
     height: 20px;
-    overflow: hidden;
+    overflow: hidden;/*OCULTA EL CONTENIDO QUE SE SALE DEL CUADRO fixed*/
     background-color: red;
-    z-index: 2;
+    z-index: 2;/*-1 ES PARA MANDAR AL FONDO Y 2 PARA TRAERLO AL FRENTE MOSTRANDOSE SOBRE TODO */
 }
 
-div.relative-size {
+div.relative-size {/*ACA ESTA EL RELATIVE*/
     height: 500px;
     width: 500px;
     position: relative;
 }
-div.absolute {
+div.absolute {/*SI UN ABSOLUTE ESTA DENTRO DE UN RELATIVE, ENTONCES SE ADECUARA DENTRO DEL RELATIVE*/
     position: absolute;
 
     top:0;
     left: 0;
 }
 
-div.sticky {
-    position: -webkit-sticky;
-    position: sticky;
+div.sticky {/*PREFIJOS DE VALORES O ROPIEDADES*/
+    position: -webkit-sticky;/*-webkit-sticky Y sticky PARA QUE FUNCIONES EN TODOS LOS NAVEGADORES*/
+    position: sticky;/*PARA QUE SE QUEDE FIJADO AUNQUE SE MUEVA LA BARRA DE SCROL*/
     top: 0;
     padding: 5px;
     border-color: blue;

@@ -1,0 +1,19 @@
+PASOS PARA COMENZAR A TRABAJAR CON NODE:
+1- crear carpeta "css"
+2- crear carpeta sass
+3- crear index.html dentro de "sass"
+4- en la consola de vscode ingresar comando npm init --yes(inicia el folder como un proyecto de npm y crea
+el archivo package.json)
+5- npm install -g sass (instalar el compilador)
+6- npm install -g node-sass (instalar libreria global)
+7- dentro de la carpeta sass, crear carpeta "main.scss"
+8- creamos estructura html y en el head linkeamos <link rel="stylesheet" href="/css/main.css">
+(aca se nos guardara el codigo que digitemos en scss)
+9- para compilarlo : node-sass -o css sass/main.scss
+(hacemos la conexion para que lo del main.scss se pase al css)
+10- para AUTOCOMPILAR: node-sass -o css sass -w
+(indicamos que compile todo lo que esta en el directorio)
+********para auto ejecutar el AUTOCOMPILADOR al entrar nuevamente al proyecto:********
+11- en el package.json, dentro de SCRIPTS colocar: "watch": "node-sass -w -o css sass"
+12- si da problema el watch, creamos en scripts: "bluid-sass": "node-sass -o css sass",
+13- cada vez que entremos al proyecto, solo ejecutar en consola: npm run watch o npm run bluid-sass

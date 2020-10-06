@@ -1,0 +1,27 @@
+/*PERSONALIZAR ENLACES*/
+
+/*ANTES Y DESPUES DER SER ABIERTO ESTE ENLACE, NO CAMBIARA EL COLOR DEL ENLACE*/
+a:link, a:visited {
+   background-color: #4CAF50; 
+   color: white;
+   padding: 14px 25px;/*RELLENO*/
+   text-align: center;
+   margin: 10px;
+   text-decoration: none;/*QUITAR SUBRAYADO DEL ENLACE*/
+   display: inline-block;/*SI SE JUNTA EL ONTENIDO, inline-block LO SEPARA PARA SER LEGIBLE*/
+   border: 1px solid transparent;/*PARA QUE EL BORDE DEL HOVER NO SE MUEVA*/
+}/*PARA PONERLOS POR SEPARADO:
+a:link{
+}
+a:visited{
+}*/
+
+/*EL HOVER ES PARA CAMBIAR DE COLOR CUANDO SE COLOCA EL MOUSE SOBRE EL ENLACE*/
+a:hover,a:active {
+    background-color: white;/*al poner el mouse, se cambiara el color a blanco*/
+    color: gray;/*al poner el mouse, las letras pasaran de blanco a gris*/
+    border: 1px solid gray;/*al poner el mouse, se pondra un borde color gris*/
+}
+a:active{/*ACTIVE ES EVENTO AL DAR CLICK*/
+    color:black;
+}

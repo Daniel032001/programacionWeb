@@ -1,0 +1,42 @@
+table {
+    border-collapse: collapse;/*UNIR LOS BORDES DUBLICADOS PARA FORMAR UNO SOLO*/
+    width: 100%;/*USAR EL 100% DEL ANCHO DE LA PAGINA*/
+}
+
+/*table, th(TITULOS), td(CELDAS DE CONTENIDO O DATA) {
+    border: 1px solid black
+}*/
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: solid 1px black;
+}
+
+
+tr:nth-child(even) {/*CAMBIAR COLOR AL PASAR MOUSE*/
+    background-color: #504f4f;
+}
+
+tr:hover {/*AL PASAR MOUSE SOBRE LAS FILAS */
+    background-color: rgb(235, 129, 129);
+}
+
+
+th {
+    background-color: teal;
+    color: white;
+}
+
+tfoot {
+    background-color: rgb(62, 146, 146);
+}
+/*
+th{
+    height: 50px; ALTO DE LAS CABECERA
+    text-align: center;
+    border-bottom: solid 2px black PARA QUE LAS FILAS TENGAN BORDE INFERIOR
+}
+
+
+*/

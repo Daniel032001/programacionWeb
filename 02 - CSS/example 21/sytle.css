@@ -8,15 +8,16 @@
 }
 
 .dropdown {
-    position: relative;
+    position: relative;/*LA POSICION RLATIVADE UNA COSA NOS AYUDA A MANIPULAR EL RESTO DE COSAS*/
     display: inline-block;
 }
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: absolute;/*COMO EL PADRE ES RELATIVO, ACA PODEMOS CONTROLAR CON ABSOCLUTA*/
     background-color: #f9f9f9;
     min-width: 160px;
+    /*0px(desplazar en "x") 8px(desplazar en "y") 16px(blur de la sobra) 0px(que tanto se exparse la sombra)*/
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -47,6 +48,6 @@
     float: right
 }
 
-.dropdown.right .dropdown-content {
+.dropdown.right .dropdown-content {/*CUANDO ESTE A LA DERECHA, QUE DESPLIEGUE LOS ENLACES A LA IZQUIERDA*/
     right: 0;
 }

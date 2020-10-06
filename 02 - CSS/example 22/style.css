@@ -32,10 +32,10 @@
 .menu ul li a:hover {
     background-color: red;
 }
-
+/*ESTADO INICIAL:*/
 .menu .dropdown-content {
     display: none;
-    position: absolute;
+    position: absolute;/*AL USAR POSITION DEBEMOS USAR z-index*/
     background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
